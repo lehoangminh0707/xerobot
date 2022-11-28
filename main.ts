@@ -1,0 +1,11 @@
+pins.digitalWritePin(DigitalPin.P14, 1)
+basic.forever(function () {
+    pins.analogWritePin(AnalogPin.P1, 900)
+    pins.digitalWritePin(DigitalPin.P12, 1)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    basic.pause(2000)
+    pins.analogWritePin(AnalogPin.P1, 900)
+    pins.digitalWritePin(DigitalPin.P12, 0)
+    pins.digitalWritePin(DigitalPin.P13, 1)
+    basic.pause(2000)
+})
